@@ -54,16 +54,15 @@ function Circle(x , y, dx, dy, radius, color ) {
     this.color = color;
 
     this.draw = function () {
+        //circulo
         c.beginPath();
         c.arc( this.x, this.y, this.radius, 0, Math.PI * 2   , false );
-
-       c.strokeStyle = "yellow";
+        c.strokeStyle = "yellow";
         c.stroke();
-        
-       c.fill();
-
-      c.fillStyle = this.color;
-      c.fillRect(this.x + Math.random() *20  , this.y +  Math.random() *20  , 100, 100)
+        c.fill();
+        //quadrado
+        c.fillStyle = this.color;
+        c.fillRect(this.x + Math.random() *20  , this.y +  Math.random() *20  , 100, 100)
            
     }
 
